@@ -2,6 +2,18 @@ body {
   padding-top: 56px;
 }
 
+a {
+  color: #194185;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #194185;
+  text-decoration: underline;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #e95439;
@@ -77,8 +89,7 @@ body {
 /* HEADER */
 
 .jumbotron {
-  background-color: #194185;
-  color: white;
+  background-color: #d7dce2;
 }
 
 /* TOP PRODUCTOS */

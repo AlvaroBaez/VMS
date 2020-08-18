@@ -95,9 +95,10 @@
         convallis sagittis.
       </p>
 
+      <!-- CARRUSEL PRODUCTOS DESKTOP-->
       <div
         id="carouselExampleIndicators"
-        class="carousel slide"
+        class="carousel slide d-none d-sm-none d-md-block"
         data-ride="carousel"
       >
         <ol class="carousel-indicators">
@@ -274,6 +275,64 @@
           </div>
         </div>
       </div>
+      <!-- CARRUSEL PRODUCTOS MOBILE-->
+      <div id="carouselExampleIndicators" class="carousel slide d-md-none d-block d-sm-block" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <!-- PRIMERO -->
+          <div class="carousel-item active">
+            <div class="col-md-4" style="float: left;">
+              <div class="card mb-2">
+                <img class="card-img-top" src="http://placehold.it/300x200" alt="Card image cap" />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-secondary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SEGUNDO -->
+          <div class="carousel-item">
+            <div class="col-md-4" style="float: left;">
+              <div class="card mb-2">
+                <img class="card-img-top" src="http://placehold.it/300x200" alt="Card image cap" />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-secondary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TERCERO -->
+          <div class="carousel-item">
+            <div class="col-md-4" style="float: left;">
+              <div class="card mb-2">
+                <img class="card-img-top" src="http://placehold.it/300x200" alt="Card image cap" />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-secondary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- CARRUSEL PRODUCTOS -->
     </div>
 
@@ -287,7 +346,10 @@
           Why us?
         </h2>
         <div class="row pt-lg-2 text-center">
-          <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+          <div
+            class="col-lg-3 col-sm-6 mb-grid-gutter"
+            style="margin-bottom: 20px;"
+          >
             <div class="d-inline-block">
               <div class="media media-ie-fix align-items-center text-left">
                 <img src="../VMS/assets/img/iconos/quality.png" />
@@ -302,7 +364,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+          <div
+            class="col-lg-3 col-sm-6 mb-grid-gutter"
+            style="margin-bottom: 20px;"
+          >
             <div class="d-inline-block">
               <div class="media media-ie-fix align-items-center text-left">
                 <img src="../VMS/assets/img/iconos/like.png" />
@@ -317,7 +382,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+          <div
+            class="col-lg-3 col-sm-6 mb-grid-gutter"
+            style="margin-bottom: 20px;"
+          >
             <div class="d-inline-block">
               <div class="media media-ie-fix align-items-center text-left">
                 <img src="../VMS/assets/img/iconos/lock.png" />
@@ -332,7 +400,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+          <div
+            class="col-lg-3 col-sm-6 mb-grid-gutter"
+            style="margin-bottom: 20px;"
+          >
             <div class="d-inline-block">
               <div class="media media-ie-fix align-items-center text-left">
                 <img src="../VMS/assets/img/iconos/support.png" />
@@ -353,98 +424,159 @@
     <!-- PORQUE NOSOTROS -->
 
     <div class="container">
-      <!-- Portfolio Section -->
+      <!-- OUR CATEGORIES -->
       <h2 class="text-center">Our Categories</h2>
       <p class="text-center" style="color: #7d879c; margin-bottom: 40px;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies
         convallis sagittis.
       </p>
 
-      <div class="row text-center">
-        <div class="col-lg-3 col-md-6 mb-4">
-          <img
-            class="rounded-circle"
-            src="http://placehold.it/300x300"
-            alt=""
-          />
-          <h4>Card title</h4>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card h-100">
+      <div class="row text-center" style="margin-bottom: 40px;">
+        <div class="col-lg-3 col-md-6 mb-4" style="display: grid;">
+          <a href="#">
             <img
-              class="card-img-top"
-              src="http://placehold.it/500x325"
+              class="rounded-circle"
+              style="margin-bottom: 20px;"
+              src="../VMS/assets/img/wine.jpg"
               alt=""
             />
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Explicabo magni sapiente, tempore debitis beatae culpa natus
-                architecto.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
+          </a>
+          <button type="button" class="btn btn-secondary">Wine</button>
         </div>
 
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card h-100">
+        <div class="col-lg-3 col-md-6 mb-4" style="display: grid;">
+          <a href="#">
             <img
-              class="card-img-top"
-              src="http://placehold.it/500x325"
+              class="rounded-circle"
+              style="margin-bottom: 20px;"
+              src="../VMS/assets/img/fruit.jpg"
               alt=""
             />
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Sapiente esse necessitatibus neque.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
+          </a>
+          <button type="button" class="btn btn-secondary">Fruits</button>
         </div>
 
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card h-100">
+        <div class="col-lg-3 col-md-6 mb-4" style="display: grid;">
+          <a href="#">
             <img
-              class="card-img-top"
-              src="http://placehold.it/500x325"
+              class="rounded-circle"
+              style="margin-bottom: 20px;"
+              src="../VMS/assets/img/meat.jpg"
               alt=""
             />
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Explicabo magni sapiente, tempore debitis beatae culpa natus
-                architecto.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
+          </a>
+          <button type="button" class="btn btn-secondary">Meat</button>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4" style="display: grid;">
+          <a href="#">
+            <img
+              class="rounded-circle"
+              style="margin-bottom: 20px;"
+              src="../VMS/assets/img/seafood.jpg"
+              alt=""
+            />
+          </a>
+          <button type="button" class="btn btn-secondary">Seafood</button>
         </div>
       </div>
-      <!-- /.row -->
+      <!-- OUR CATEGORIES -->
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-2" style="background-color: #194185;">
-      <div class="container">
-        <p class="m-0 text-center text-white">
-          Copyright &copy; Your Website 2020
-        </p>
+    <footer class="page-footer font-small blue-grey lighten-5">
+      <div style="background-color: #d7dce2; padding-top: 1px;">
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-5" style="background-color: #d7dce2;">
+        <!-- Grid row -->
+        <div class="row mt-3 dark-grey-text">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase font-weight-bold">VMS Trading</h6>
+            <hr
+              class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies convallis sagittis. Ut scelerisque ex nunc, nec
+              consequat dolor pharetra vitae.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Products</h6>
+            <hr
+              class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p>
+              <a class="dark-grey-text" href="#!">Wine</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Fruits</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Meat</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Seafood</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" >
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+            <hr
+              class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p>
+              <a class="dark-grey-text" href="#!">Home</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">About Us</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Products</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <hr
+              class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p><i class="fas fa-home mr-3"></i> Santiago, Chile</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@vms-trading.com</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
       </div>
-      <!-- /.container -->
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center text-black-50 py-3"  style="background-color: #c0c6ce;">
+        VMS Trading © 2020 Design by 
+        <a class="dark-grey-text" href="https://www.alvarobaez.com/">
+          AlvaroBáez.com</a
+        >
+      </div>
+      <!-- Copyright -->
     </footer>
+    <!-- Footer -->
 
     <!-- Bootstrap core JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
