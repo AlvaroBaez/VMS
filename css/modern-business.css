@@ -1,7 +1,3 @@
-body {
-  padding-top: 56px;
-}
-
 a {
   color: #194185;
   text-decoration: none;
@@ -72,7 +68,6 @@ a:hover {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
   color: #194185;
-  font-weight: bold;
 }
 
 /* HEADER */
