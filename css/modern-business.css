@@ -63,20 +63,8 @@ a:hover {
   box-shadow: 0px 14px 26px -15px rgba(0, 0, 0, 0.2);
 }
 
-.navbar {
-  border-top-color: 1px solid
-    linear-gradient(
-      to right,
-      rgba(124, 17, 69, 1) 0%,
-      rgba(124, 17, 69, 1) 25%,
-      rgba(68, 162, 73, 1) 25%,
-      rgba(68, 162, 73, 1) 50%,
-      rgba(233, 83, 57, 1) 50%,
-      rgba(240, 47, 23, 1) 75%,
-      rgba(88, 164, 219, 1) 75%,
-      rgba(88, 164, 219, 1) 100%
-    );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c1145', endColorstr='#58a4db', GradientType=1 );
+.nav-margin {
+  padding-right: 2.5rem !important;
 }
 
 .navbar-light .navbar-nav .active > .nav-link,
@@ -84,6 +72,7 @@ a:hover {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
   color: #194185;
+  font-weight: bold;
 }
 
 /* HEADER */
@@ -102,4 +91,60 @@ a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+/* NUMEROS */
+
+.counter {
+  background-color: #efeff0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.employees,
+.customer,
+.design,
+.order {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.counter-count {
+  font-size: 18px;
+  border-radius: 50%;
+  position: relative;
+  color: #e95439;
+  text-align: center;
+  line-height: 92px;
+  width: 92px;
+  height: 92px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.employee-p,
+.customer-p,
+.order-p,
+.design-p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* breadcrumb */
+
+.breadcrumb {
+  background-color: #efeff0;
+}
+
+@media (min-width: 992px) {
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    top: 89px;
+  }
 }
