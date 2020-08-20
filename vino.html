@@ -1,204 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- fontawesome -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-    <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet" />
+  <!-- fontawesome -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
-    <script type="text/javascript">
-      /// some script
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet" />
 
-      // jquery ready start
-      $(document).ready(function () {
-        // jQuery code
+  <script type="text/javascript">
+    /// some script
 
-        //////////////////////// Prevent closing from click inside dropdown
-        $(document).on("click", ".dropdown-menu", function (e) {
-          e.stopPropagation();
-        });
-      }); // jquery end
-    </script>
+    // jquery ready start
+    $(document).ready(function () {
+      // jQuery code
 
-    <style type="text/css">
-      @media all and (min-width: 992px) {
-        .navbar {
-          padding-top: 0;
-          padding-bottom: 0;
-        }
+      //////////////////////// Prevent closing from click inside dropdown
+      $(document).on("click", ".dropdown-menu", function (e) {
+        e.stopPropagation();
+      });
+    }); // jquery end
+  </script>
 
-        .navbar .has-megamenu {
-          position: static !important;
-        }
+</head>
 
-        .navbar .megamenu {
-          left: 0;
-          right: 0;
-          width: 100%;
-          padding: 20px;
-        }
-
-        .navbar .nav-link {
-          padding-top: 1rem;
-          padding-bottom: 1rem;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <!-- Navigation -->
-    <nav
-      class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top nav-shadow linea-colores"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/img/Logo/Logo-VMS.png" alt="" />
-        </a>
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link nav-margin" href="index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link nav-margin" href="about-us.html">About us</a>
-            </li>
-            <li class="nav-item dropdown has-megamenu">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                data-toggle="dropdown"
-              >
-                Mega menu
-              </a>
-              <div
-                class="dropdown-menu megamenu container"
-                role="menu"
-                style="margin: 0 auto;"
-              >
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="col-megamenu">
-                      <h6 class="title">Title Menu One</h6>
-                      <ul class="list-unstyled">
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                      </ul>
-                    </div>
-                    <!-- col-megamenu.// -->
+<body>
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top nav-shadow linea-colores">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/Logo/Logo-VMS.png" alt="" />
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link nav-margin" href="index.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link nav-margin" href="about-us.html">About us</a>
+          </li>
+          <li class="nav-item dropdown has-megamenu active">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" style="padding-right: 2rem;">
+              Products
+            </a>
+            <div class="dropdown-menu megamenu container" role="menu" style="margin: 0 auto;">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="col-megamenu" style="margin-bottom: 10px;">
+                    <a href="vino.html">
+                      <h6 class="title titulo-megamenu">Wine</h6>
+                    </a>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                    </ul>
                   </div>
-                  <!-- end col-3 -->
-                  <div class="col-md-3">
-                    <div class="col-megamenu">
-                      <h6 class="title">Title Menu Two</h6>
-                      <ul class="list-unstyled">
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                      </ul>
-                    </div>
-                    <!-- col-megamenu.// -->
-                  </div>
-                  <!-- end col-3 -->
-                  <div class="col-md-3">
-                    <div class="col-megamenu">
-                      <h6 class="title">Title Menu Three</h6>
-                      <ul class="list-unstyled">
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                      </ul>
-                    </div>
-                    <!-- col-megamenu.// -->
-                  </div>
-                  <div class="col-md-3">
-                    <div class="col-megamenu">
-                      <h6 class="title">Title Menu Four</h6>
-                      <ul class="list-unstyled">
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                      </ul>
-                    </div>
-                    <!-- col-megamenu.// -->
-                  </div>
-                  <!-- end col-3 -->
+                  <!-- col-megamenu.// -->
                 </div>
-                <!-- end row -->
+                <!-- end col-3 -->
+                <div class="col-md-3">
+                  <div class="col-megamenu" style="margin-bottom: 10px;">
+                    <a href="#">
+                      <h6 class="title titulo-megamenu">Fruits</h6>
+                    </a>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                    </ul>
+                  </div>
+                  <!-- col-megamenu.// -->
+                </div>
+                <!-- end col-3 -->
+                <div class="col-md-3">
+                  <div class="col-megamenu" style="margin-bottom: 10px;">
+                    <a href="#">
+                      <h6 class="title titulo-megamenu">Meat</h6>
+                    </a>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                    </ul>
+                  </div>
+                  <!-- col-megamenu.// -->
+                </div>
+                <div class="col-md-3">
+                  <div class="col-megamenu" style="margin-bottom: 10px;">
+                    <a href="#">
+                      <h6 class="title titulo-megamenu">SeaFood</h6>
+                    </a>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                    </ul>
+                  </div>
+                  <!-- col-megamenu.// -->
+                </div>
+                <!-- end col-3 -->
               </div>
-              <!-- dropdown-mega-menu.// -->
-            </li>
-            <li
-              class="nav-item"
-              style="
+              <!-- end row -->
+            </div>
+            <!-- dropdown-mega-menu.// -->
+          </li>
+          <li class="nav-item" style="
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-              "
-            >
-              <a class="btn btn-primary" href="contact.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
+              ">
+            <a class="btn btn-primary" href="contact.html">Contacto</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <!-- Page Content -->
     <div class="container">
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">
-        Portfolio 1
-        <small>Subheading</small>
+      <h1 style="margin-top: 3rem;">
+        Wine
       </h1>
 
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="index.html">Home</a>
         </li>
-        <li class="breadcrumb-item active">Portfolio 1</li>
+        <li class="breadcrumb-item active">Wine</li>
       </ol>
 
       <!-- Project One -->
@@ -213,7 +168,7 @@
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Project One</h3>
+          <h3>Wine 1</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
             veniam exercitationem expedita laborum at voluptate. Labore,
@@ -242,7 +197,7 @@
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Project Two</h3>
+          <h3>Wine 2</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit
             velit cumque vero doloremque repellendus distinctio maiores rem
@@ -271,7 +226,7 @@
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Project Three</h3>
+          <h3>Wine 3</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,
             temporibus, dolores, at, praesentium ut unde repudiandae voluptatum
@@ -300,7 +255,7 @@
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Project Four</h3>
+          <h3>Wine 4</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo,
             quidem, consectetur, officia rem officiis illum aliquam perspiciatis
@@ -346,10 +301,10 @@
 
     <!-- Footer -->
     <footer class="page-footer font-small blue-grey lighten-5">
-      <div style="background-color: #efeff0; padding-top: 1px;">
+      <div style="background-color: #f7f8f9; padding-top: 1px;">
     
         <!-- Footer Links -->
-        <div class="container text-center text-md-left mt-5" style="background-color: #efeff0;">
+        <div class="container text-center text-md-left mt-5" style="background-color: #f7f8f9;">
           <!-- Grid row -->
           <div class="row mt-3 dark-grey-text">
             <!-- Grid column -->
@@ -420,7 +375,7 @@
         <div>
           <hr>
         </div>
-        <div class="footer-copyright text-center text-black-50 py-3" style="background-color: #efeff0;">
+        <div class="footer-copyright text-center text-black-50 py-3" style="background-color: #f7f8f9;">
           VMS Trading © 2020 Design by
           <a class="dark-grey-text" href="https://www.alvarobaez.com/">
             AlvaroBaez.com</a>

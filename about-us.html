@@ -1,91 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- fontawesome -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-    <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet" />
-  </head>
+  <!-- fontawesome -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- Navigation -->
-    <nav
-      class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top nav-shadow linea-colores"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/img/Logo/Logo-VMS.png" alt="" />
-        </a>
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link nav-margin" href="index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link nav-margin" href="about-us.html">About us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle nav-margin"
-                href="#"
-                id="navbarDropdownPortfolio"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Products
-              </a>
-              <div
-                class="dropdown-menu dropdown-menu-right"
-                aria-labelledby="navbarDropdownPortfolio"
-              >
-                <a class="dropdown-item" href="#">1</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5</a>
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet" />
+
+  <script type="text/javascript">
+    /// some script
+
+    // jquery ready start
+    $(document).ready(function () {
+      // jQuery code
+
+      //////////////////////// Prevent closing from click inside dropdown
+      $(document).on("click", ".dropdown-menu", function (e) {
+        e.stopPropagation();
+      });
+    }); // jquery end
+  </script>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top nav-shadow linea-colores">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/Logo/Logo-VMS.png" alt="" />
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link nav-margin" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link nav-margin" href="about-us.html">About us</a>
+          </li>
+          <li class="nav-item dropdown has-megamenu">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" style="padding-right: 2rem;">
+              Products
+            </a>
+            <div class="dropdown-menu megamenu container" role="menu" style="margin: 0 auto;">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="col-megamenu" style="margin-bottom: 10px;">
+                    <a href="vino.html">
+                      <h6 class="title titulo-megamenu">Wine</h6>
+                    </a>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                    </ul>
+                  </div>
+                  <!-- col-megamenu.// -->
+                </div>
+                <!-- end col-3 -->
+                <div class="col-md-3">
+                  <div class="col-megamenu" style="margin-bottom: 10px;">
+                    <a href="#">
+                      <h6 class="title titulo-megamenu">Fruits</h6>
+                    </a>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                    </ul>
+                  </div>
+                  <!-- col-megamenu.// -->
+                </div>
+                <!-- end col-3 -->
+                <div class="col-md-3">
+                  <div class="col-megamenu" style="margin-bottom: 10px;">
+                    <a href="#">
+                      <h6 class="title titulo-megamenu">Meat</h6>
+                    </a>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                    </ul>
+                  </div>
+                  <!-- col-megamenu.// -->
+                </div>
+                <div class="col-md-3">
+                  <div class="col-megamenu" style="margin-bottom: 10px;">
+                    <a href="#">
+                      <h6 class="title titulo-megamenu">SeaFood</h6>
+                    </a>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                      <li><a href="#">Custom Menu</a></li>
+                    </ul>
+                  </div>
+                  <!-- col-megamenu.// -->
+                </div>
+                <!-- end col-3 -->
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-primary" href="contact.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
+              <!-- end row -->
+            </div>
+            <!-- dropdown-mega-menu.// -->
+          </li>
+          <li class="nav-item" style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              ">
+            <a class="btn btn-primary" href="contact.html">Contacto</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <!-- Page Content -->
-    <div class="container" style="margin-top: 6rem;">
+    <div class="container" style="margin-top: 3rem;">
       <!-- Page Heading/Breadcrumbs -->
       <h1 class="mb-3">
         About us
@@ -124,7 +182,7 @@
         </div>
       </div>
       <!-- /.row -->
-
+    </div>
       <!-- Number of products -->
       <h2 class="text-center">Number of products</h2>
       <p class="text-center" style="color: #7d879c;">
@@ -132,47 +190,33 @@
         convallis sagittis.
       </p>
 
-    <script type="text/javascript">
-        $('.counter-count').each(function () {
-            $(this).prop('Counter', 0).animate({
-              Counter: $(this).text()
-            }, {
-              duration: 20,
-              easing: 'swing',
-              step: function (now) {
-                $(this).text(Math.ceil(now));
-              }
-            });
-          });
-      </script>
-
       <div class="counter">
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
               <div class="employees">
-                <p class="counter-count">20</p>
+                <p class='numscroller counter-count' data-min='1' data-max='20' data-delay='1' data-increment='1'>20</p>
                 <p class="employee-p">WINE</p>
               </div>
             </div>
       
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
               <div class="customer">
-                <p class="counter-count">20</p>
+                <p class='numscroller counter-count' data-min='1' data-max='20' data-delay='1' data-increment='1'>20</p>
                 <p class="customer-p">FRUITS</p>
               </div>
             </div>
       
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
               <div class="design">
-                <p class="counter-count">20</p>
+                <p class='numscroller counter-count' data-min='1' data-max='20' data-delay='1' data-increment='1'>20</p>
                 <p class="design-p">MEAT</p>
               </div>
             </div>
       
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
               <div class="order">
-                <p class="counter-count">20</p>
+                <p class='numscroller counter-count' data-min='1' data-max='20' data-delay='1' data-increment='1'>20</p>
                 <p class="order-p">SEAFOOD</p>
               </div>
             </div>
@@ -180,7 +224,8 @@
         </div>
       </div>
       <!-- /.row -->
-
+    
+    <div class="container">
       <!-- Our Clients -->
       <h2 class="text-center">Our Clients</h2>
       <p class="text-center" style="color: #7d879c; margin-bottom: 40px;">
@@ -211,12 +256,12 @@
     </div>
     <!-- /.container -->
 
-    <!-- Footer -->
+     <!-- Footer -->
     <footer class="page-footer font-small blue-grey lighten-5">
-      <div style="background-color: #efeff0; padding-top: 1px;">
+      <div style="background-color: #f7f8f9; padding-top: 1px;">
     
         <!-- Footer Links -->
-        <div class="container text-center text-md-left mt-5" style="background-color: #efeff0;">
+        <div class="container text-center text-md-left mt-5" style="background-color: #f7f8f9;">
           <!-- Grid row -->
           <div class="row mt-3 dark-grey-text">
             <!-- Grid column -->
@@ -287,7 +332,7 @@
         <div>
           <hr>
         </div>
-        <div class="footer-copyright text-center text-black-50 py-3" style="background-color: #efeff0;">
+        <div class="footer-copyright text-center text-black-50 py-3" style="background-color: #f7f8f9;">
           VMS Trading © 2020 Design by
           <a class="dark-grey-text" href="https://www.alvarobaez.com/">
             AlvaroBaez.com</a>
@@ -295,7 +340,7 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
-
+    
     <!-- Bootstrap core JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -306,5 +351,5 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./js/numscroller-1.0.js"></script>
     </body>
-
+    
     </html>
