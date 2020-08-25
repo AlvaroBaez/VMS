@@ -121,10 +121,7 @@ a:hover {
   list-style: none;
   background-color: #f7f8f9;
   background-clip: padding-box;
-  border-top: 1px solid #efeff0;
-  border-right: 0px;
-  border-left: 0px;
-  border-bottom: 0px;
+  border: 1px solid #efeff0;
   border-radius: 0rem;
   box-shadow: 0px 14px 26px -15px rgba(0, 0, 0, 0.2);
 }
@@ -142,6 +139,16 @@ a:hover {
 
 .background-a {
   padding: 5px;
+}
+
+.titulo-megamenu {
+  background-color: #efeff0;
+  padding: 2px;
+  padding-left: 5px;
+}
+
+.color-negro a {
+  color: #1e2124 !important;
 }
 
 /* HEADER */
