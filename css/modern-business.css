@@ -141,12 +141,6 @@ a:hover {
   padding: 5px;
 }
 
-.titulo-megamenu {
-  background-color: #efeff0;
-  padding: 2px;
-  padding-left: 5px;
-}
-
 .color-negro a {
   color: #1e2124 !important;
 }
@@ -213,4 +207,41 @@ a:hover {
 
 .breadcrumb {
   background-color: #efeff0;
+}
+
+/* CAROUSEL */
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  left: 0;
+  z-index: 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+.carousel-indicators .active {
+  background-color: #e95439;
+}
+
+.carousel-indicators li {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  background-color: #194185;
 }
