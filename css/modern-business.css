@@ -1,3 +1,12 @@
+header {
+  padding: 150px 0 100px;
+}
+
+.bg-primary {
+  background-color: transparent !important;
+  background-image: url(../assets/img/home.jpg);
+}
+
 a {
   color: #194185;
   text-decoration: none;
@@ -166,7 +175,7 @@ a:hover {
 /* NUMEROS */
 
 .counter {
-  background-color: #fde9e0;
+  background-color: #f3f5f9;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -181,7 +190,7 @@ a:hover {
   font-size: 18px;
   border-radius: 50%;
   position: relative;
-  color: #e95439;
+  color: #124185;
   text-align: center;
   line-height: 92px;
   width: 92px;
