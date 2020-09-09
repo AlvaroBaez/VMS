@@ -31,6 +31,14 @@ a:hover {
   border-color: #c4412a;
 }
 
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #c4412a;
+  border-color: #c4412a;
+}
+
 .btn-secondary {
   color: #194185;
   background-color: white;
@@ -38,6 +46,14 @@ a:hover {
 }
 
 .btn-secondary:hover {
+  color: #fff;
+  background-color: #194185;
+  border-color: #194185;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
   color: #fff;
   background-color: #194185;
   border-color: #194185;
@@ -88,6 +104,10 @@ a:hover {
   width: 100vw;
 }
 
+.container-header {
+  min-height: 70px;
+}
+
 /* MEGAMENU */
 
 @media all and (min-width: 992px) {
@@ -105,7 +125,7 @@ a:hover {
     right: 0;
     width: 100%;
     padding: 20px;
-    top: 89px;
+    top: 70px;
   }
 
   .navbar .nav-link {
@@ -253,4 +273,10 @@ a:hover {
   margin-left: 3px;
   text-indent: -999px;
   background-color: #194185;
+}
+
+/* CARD */
+
+.card-noborder {
+  border: none !important;
 }
