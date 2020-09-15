@@ -25,25 +25,6 @@
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet" />
 
-    <!-- fromulario -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script type="text/javascript">
-      function sendEmail() {
-        debugger
-        Email.send({
-          Host: "smtp.gmail.com",
-          Username: "alvarobaezm@gmail.com",
-          Password: "<email password>",
-          To: '<recipient’s email address>',
-          From: "alvarobaezm@gmail.com",
-          Subject: "Web Contact",
-          Body: "<email body>",
-        })
-          .then(function (message) {
-            alert("mail sent successfully")
-          });
-      }
-    </script>
 
   </head>
 
@@ -64,10 +45,7 @@
             <li class="nav-item ">
               <a class="nav-link nav-margin" href="index.html">Home</a>
             </li>
-            <li class="nav-item ">
-              <a class="nav-link nav-margin" href="about-us.html">About us</a>
-            </li>
-            <li class="nav-item dropdown has-megamenu ">
+            <li class="nav-item dropdown has-megamenu active">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" style="padding-right: 2rem;">
                 Products
               </a>
@@ -95,8 +73,8 @@
                         <a href="giant-squid.html">
                           <li class="background-a">Giant Squid</li>
                         </a>
-                        <a href="crab.html">
-                          <li class="background-a">Crab</li>
+                        <a href="stone-crab.html">
+                          <li class="background-a">Stone Crab</li>
                         </a>
                         <a href="sea-urchins.html">
                           <li class="background-a">Sea Urchins</li>
@@ -139,14 +117,14 @@
                         <h6 class="title titulo-megamenu">SeaFood</h6>
                       </a>
                       <ul class="list-unstyled">
-                        <a href="salmon-hamburguer.html">
-                          <li class="background-a">Salmon Hamburguer</li>
+                        <a href="salmon-burgers.html">
+                          <li class="background-a">Salmon Burgers</li>
                         </a>
                         <a href="atlantic-salmon-steak.html">
                           <li class="background-a">Atlantic Salmon Steak</li>
                         </a>
-                        <a href="abalone.html">
-                          <li class="background-a">Abalone</li>
+                        <a href="chilean-abalones.html">
+                          <li class="background-a">Chilean Abalones</li>
                         </a>
                         <a href="sea-conchs.html">
                           <li class="background-a">Sea Conchs</li>
@@ -204,13 +182,10 @@
                   <!-- MEAT -->
                   <div class="col-md-2">
                     <div class="col-megamenu" style="margin-bottom: 10px;">
-                      <a href="meat.html">
+                      <a href="#">
                         <h6 class="title titulo-megamenu">Meat</h6>
                       </a>
                       <ul class="list-unstyled">
-                        <a href="lamb.html">
-                          <li class="background-a">Lamb</li>
-                        </a>
                         <a href="wagyu.html">
                           <li class="background-a">Wagyu</li>
                         </a>
@@ -233,10 +208,10 @@
               <!-- dropdown-mega-menu.// -->
             </li>
             <li class="nav-item" style="
-                          display: flex;
-                          flex-direction: column;
-                          justify-content: center;
-                        ">
+                                  display: flex;
+                                  flex-direction: column;
+                                  justify-content: center;
+                                ">
               <a class="btn btn-primary" href="contact.html">Contact</a>
             </li>
           </ul>
@@ -261,71 +236,7 @@
       <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
       <div class="row">
         <div class="col-lg-8 mb-4">
-          <form name="sentMessage" id="contactForm" novalidate>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Full Name:</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  required
-                  data-validation-required-message="Please enter your name."
-                />
-                <p class="help-block"></p>
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Phone Number:</label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="phone"
-                  required
-                  data-validation-required-message="Please enter your phone number."
-                />
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Email Address:</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  required
-                  data-validation-required-message="Please enter your email address."
-                />
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Message:</label>
-                <textarea
-                  rows="10"
-                  cols="100"
-                  class="form-control"
-                  id="message"
-                  required
-                  data-validation-required-message="Please enter your message"
-                  maxlength="999"
-                  style="resize: none"
-                ></textarea>
-              </div>
-            </div>
-            <div id="success"></div>
-            <!-- For success/fail messages -->
-            <button
-              type="submit"
-              class="btn btn-primary"
-              id="sendMessageButton"
-              style="margin-bottom: 40px"
-              onclick="sendEmail()"
-            >
-              Send Message
-            </button>
-          </form>
+          <h3>Thank you for contacting VMS Trading we will respond as soon as possible.</h3>
         </div>
       </div>
       <!-- /.row -->

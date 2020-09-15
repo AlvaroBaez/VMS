@@ -280,3 +280,8 @@ a:hover {
 .card-noborder {
   border: none !important;
 }
+
+.btn-enviar {
+  background-color: #194185;
+  color: white;
+}

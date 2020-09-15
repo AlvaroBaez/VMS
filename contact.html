@@ -236,11 +236,12 @@
       <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
       <div class="row">
         <div class="col-lg-8 mb-4">
-          <form action="contact_me.php" method="POST" name="sentMessage" id="contactForm" novalidate>
+          <form action="https://api.staticforms.xyz/submit" method="post">
             <div class="control-group form-group">
               <div class="controls">
                 <label>Full Name:</label>
                 <input
+                name="name"
                   type="text"
                   class="form-control"
                   id="name"
@@ -252,20 +253,9 @@
             </div>
             <div class="control-group form-group">
               <div class="controls">
-                <label>Phone Number:</label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="phone"
-                  required
-                  data-validation-required-message="Please enter your phone number."
-                />
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
                 <label>Email Address:</label>
                 <input
+                name="email"
                   type="email"
                   class="form-control"
                   id="email"
@@ -278,6 +268,7 @@
               <div class="controls">
                 <label>Message:</label>
                 <textarea
+                name="message"
                   rows="10"
                   cols="100"
                   class="form-control"
@@ -290,13 +281,16 @@
               </div>
             </div>
             <div id="success"></div>
-            <!-- For success/fail messages -->
+            <input type="text" name="honeypot" style="display: none;" />
+            <input type="hidden" name="accessKey" value="ce8cd1e3-23bb-4001-87f2-85a0d248f605" />
+            <input type="hidden" name="subject" value="Contact us from VMS Trading" />
+            <input type="hidden" name="replyTo" value="@" />
+            <input type="hidden" name="redirectTo" value="success.html" />
             <button
               type="submit"
-              class="btn btn-primary"
+              class="btn btn-enviar"
               id="sendMessageButton"
-              style="margin-bottom: 40px"
-              onclick="sendEmail()"
+              style="margin-bottom: 40px; float: right;"
             >
               Send Message
             </button>
@@ -401,7 +395,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
           integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="./js/numscroller-1.0.js"></script>
-        <script src="./js/contact_me.js"></script>
         </body>
         
         </html>
