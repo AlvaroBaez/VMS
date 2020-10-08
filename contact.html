@@ -237,6 +237,11 @@
       <div class="row">
         <div class="col-lg-8 mb-4">
           <form action="https://api.staticforms.xyz/submit" method="post">
+            <input name="_honeypot" type="hidden" style="display:none" />
+            <input type="hidden" name="accessKey" value="7311006c-70bd-4dd7-ac5e-e809ca709a6c" />
+            <input type="hidden" name="subject" value="Contact us from VMS Trading" />
+            <input type="hidden" name="replyTo" value="@" />
+            <input type="hidden" name="redirectTo" value="http://www.vmstrading.cl/success.html" />
             <div class="control-group form-group">
               <div class="controls">
                 <label>Full Name:</label>
@@ -281,11 +286,6 @@
               </div>
             </div>
             <div id="success"></div>
-            <input type="text" name="honeypot" style="display: none;" />
-            <input type="hidden" name="accessKey" value="7311006c-70bd-4dd7-ac5e-e809ca709a6c" />
-            <input type="hidden" name="subject" value="Contact us from VMS Trading" />
-            <input type="hidden" name="replyTo" value="@" />
-            <input type="hidden" name="redirectTo" value="http://www.vmstrading.cl/success.html" />
             <button
               type="submit"
               class="btn btn-enviar"
