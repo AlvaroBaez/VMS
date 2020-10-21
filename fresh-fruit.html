@@ -16,6 +16,9 @@
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet" />
 
+  <!-- Ekko lightbox -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet" />
+
   <script type="text/javascript">
     /// some script
 
@@ -263,6 +266,7 @@
               <li>Valencia</li>
             </ul>
             <p>Availability; from June till November</p>
+            <a class="btn btn-secondary" href="assets/img/fruits/disponibilidad/1110x500-oranges.jpg" data-toggle="lightbox" data-title="Oranges" data-footer="">Availability table</a>
         </div>
       </div>
       <!-- /.row -->
@@ -292,6 +296,8 @@
               <li>Thompson Seedless</li>
               <li>Superior</li>
             </ul>
+            <a class="btn btn-secondary" href="assets/img/fruits/disponibilidad/1110x500-grapes.jpg" data-toggle="lightbox"
+              data-title="Grapes" data-footer="">Availability table</a>
         </div>
       </div>
       <!-- /.row -->
@@ -313,6 +319,8 @@
               <li>Genova</li>
             </ul>
             <p>Availability; from May till October.</p>
+            <a class="btn btn-secondary" href="assets/img/fruits/disponibilidad/1110x500-lemon.jpg" data-toggle="lightbox"
+              data-title="Lemon" data-footer="">Availability table</a>
         </div>
       </div>
       <!-- /.row -->
@@ -330,6 +338,8 @@
             The variety that occupies the most surface in Chile is Hass. Addition it is the only variety that is exported. This
             variety has proven to be a good producer and has high internal quality fruit, it is not as old as other varieties
           </p>
+            <a class="btn btn-secondary" href="assets/img/fruits/disponibilidad/1110x500-avocados.jpg" data-toggle="lightbox"
+              data-title="Avocados" data-footer="">Availability table</a>
         </div>
       </div>
       <!-- /.row -->
@@ -348,6 +358,8 @@
             easy to peel and separate the slices.
             <p>Availability; from August till November</p>
           </p>
+          <a class="btn btn-secondary" href="assets/img/fruits/disponibilidad/1110x500-tangerines.jpg" data-toggle="lightbox"
+            data-title="Tangerines" data-footer="">Availability table</a>
         </div>
       </div>
       <!-- /.row -->
@@ -368,6 +380,8 @@
             <p>Variety:</p>
               <li>Hayward</li>
             </ul>
+            <a class="btn btn-secondary" href="assets/img/fruits/disponibilidad/1110x500-kiwi.jpg" data-toggle="lightbox"
+              data-title="Kiwi" data-footer="">Availability table</a>
         </div>
       </div>
       <!-- /.row -->
@@ -395,6 +409,8 @@
               <li>Royal Gala</li>
             </ul>
           </p>
+          <a class="btn btn-secondary" href="assets/img/fruits/disponibilidad/1110x500-apples.jpg" data-toggle="lightbox"
+            data-title="Apples" data-footer="">Availability table</a>
         </div>
       </div>
       <!-- /.row -->
@@ -420,6 +436,8 @@
               <li>Summer Bartlett (Williams)</li>
             </ul>
           </p>
+          <a class="btn btn-secondary" href="assets/img/fruits/disponibilidad/1110x500-pears.jpg" data-toggle="lightbox"
+            data-title="Pears" data-footer="">Availability table</a>
         </div>
       </div>
       <!-- /.row -->
@@ -444,6 +462,8 @@
             <li>Santina</li>
             <li>Regina</li>
           </ul>
+          <a class="btn btn-secondary" href="assets/img/fruits/disponibilidad/1110x500-cherries.jpg" data-toggle="lightbox"
+            data-title="Cherries" data-footer="">Availability table</a>
         </div>
       </div>
       <!-- /.row -->
@@ -469,6 +489,8 @@
             <li>Emerald</li>
             <li>Brigitta</li>
           </ul>
+          <a class="btn btn-secondary" href="assets/img/fruits/disponibilidad/1110x500-blueberry.jpg" data-toggle="lightbox"
+            data-title="Blueberry" data-footer="">Availability table</a>
         </div>
       </div>
       <!-- /.row -->
@@ -560,7 +582,15 @@
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./js/numscroller-1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script>
+      $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+          event.preventDefault();
+          $(this).ekkoLightbox({
+            alwaysShowClose: true,
+          });
+        });
+    </script>
     </body>
     
     </html>
