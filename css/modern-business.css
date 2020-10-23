@@ -1,3 +1,14 @@
+* {box-sizing: border-box;
+}
+
+body{
+  padding-right: 0px !important;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 header {
   padding: 150px 0 100px;
 }
@@ -111,6 +122,11 @@ a:hover {
 /* MEGAMENU */
 
 @media all and (min-width: 992px) {
+
+  .container-header {
+  height: 60px;
+  }
+
   .navbar {
     padding-top: 0;
     padding-bottom: 0;
